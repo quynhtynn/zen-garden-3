@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* basic css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* page Wrapper style */
+.page-wrapper {
+  max-width: 1320px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+.intro {
+  position: relative;
+}
+.intro header {
+  display: flex;
+  gap: 24px;
+}
+.intro header h1 {
+  position: relative;
+  flex: 0 0 calc(50% - 12px);
+  font-size: 108px;
+  font-weight: 900;
+  color: #8b4513;
+  line-height: 80%;
+  text-align: end;
+  text-transform: uppercase;
+  padding-top: 36px;
+}
+.intro header h1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(50% - 32px);
+  background-color: #87ceeb;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+}
+.intro header h2 {
+  flex: 0 0 calc(50% - 12px);
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90%;
+  text-transform: uppercase;
+  padding-left: 48px;
+  padding-right: 16px;
+  z-index: 1;
+  margin-top: 178px;
+}
+.intro .summary {
+  position: absolute;
+  background-color: #8a9a5b;
+  right: 0;
+  top: 0;
+  width: calc(50% - 12px);
+  border-radius: 50px;
+  padding: 64px 84px 142px 48px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.intro .summary p {
+  font-family: "Montserrat", sans-serif;
+}
+.intro .summary a {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.intro .preamble {
+  position: relative;
+  margin: 64px 0;
+  width: calc(50% - 12px);
+}
+.intro .preamble h3 {
+  color: #228b22;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.intro .preamble p {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 17px;
+  margin-top: 16px;
+}
+.intro .preamble p:last-child {
+  position: absolute;
+  background: #8b4513;
+  left: calc(100% + 24px);
+  color: #fff;
+  padding: 24px 0 24px 48px;
+  top: 0;
+  width: 100%;
+}
+.intro .preamble p:last-child::after {
+  content: "";
+  position: absolute;
+  background: #8b4513;
+  width: calc(50vw - 100% - 11px);
+  height: 100%;
+  top: 0;
+  left: calc(100% - 1px);
+}
+
+.supporting {
+  position: relative;
+  padding-bottom: 48px;
+}
+.supporting .explanation,
+.supporting .benefits {
+  position: relative;
+  margin: 64px 0;
+  width: calc(50% - 12px);
+}
+.supporting .explanation h3,
+.supporting .benefits h3 {
+  color: #228b22;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.supporting .explanation p,
+.supporting .benefits p {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 17px;
+  margin-top: 16px;
+}
+.supporting .participation {
+  position: relative;
+  margin: 64px 0;
+  width: calc(50% - 12px);
+  background-color: #87ceeb;
+  padding: 36px 10% 36px 0;
+  border-radius: 0 50px 50px 0;
+}
+.supporting .participation h3 {
+  color: #000;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.supporting .participation p {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 17px;
+  margin-top: 16px;
+}
+.supporting .participation p::after {
+  content: "";
+  position: absolute;
+  background-color: #87ceeb;
+  width: calc(50vw - 100% - 11px);
+  height: 100%;
+  top: 0;
+  right: calc(100% - 1px);
+}
+.supporting .requirements {
+  position: absolute;
+  width: calc(50% - 12px);
+  background-color: rgba(255, 215, 0, 0.6);
+  padding: 48px;
+  top: 0;
+  right: 0;
+}
+.supporting .requirements h3 {
+  color: #000;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.supporting .requirements p {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 17px;
+  margin-top: 16px;
+}
+.supporting .benefits {
+  margin-bottom: 0;
+}
+.supporting footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 146px;
+  position: absolute;
+  width: calc(50% - 12px);
+  bottom: 0;
+  right: 0;
+  gap: 8px;
+}
+.supporting footer a {
+  text-decoration: none;
+  position: relative;
+  height: 100%;
+  font-size: 0;
+  width: 100%;
+}
+.supporting footer .zen-validate-html {
+  background: url("./assets/img/html.png") no-repeat top center/contain;
+}
+.supporting footer .zen-validate-css {
+  background: url("./assets/img/css.png") no-repeat top center/contain;
+}
+.supporting footer .zen-license {
+  background: url("./assets/img/ally.png") no-repeat top center/contain;
+}
+.supporting footer .zen-accessibility {
+  background: url("./assets/img/gh.png") no-repeat top center/contain;
+}
+.supporting footer .zen-github {
+  background: url("./assets/img/cc.png") no-repeat top center/contain;
+}
+
+.sidebar {
+  position: relative;
+}
+.sidebar .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar .wrapper .design-selection {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 24px 0;
+}
+.sidebar .wrapper .design-selection h3 {
+  color: #228b22;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.sidebar .wrapper .design-selection nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+  gap: 24px;
+}
+.sidebar .wrapper .design-selection nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-weight: 300;
+  gap: 3px;
+  flex: 0 0 calc(25% - 18px);
+  height: calc(50% - 24px);
+  max-height: 240px;
+  max-width: 240px;
+  color: #fff;
+  position: relative;
+  padding: 8px;
+  z-index: 1;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sidebar .wrapper .design-selection nav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  color: #fff;
+  z-index: 1;
+}
+.sidebar .wrapper .design-selection nav ul li a.design-name {
+  font-size: 20px;
+  display: block;
+  flex: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+.sidebar .wrapper .design-selection nav ul li a.designer-name {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.sidebar .wrapper .design-selection nav ul li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.sidebar .wrapper .design-selection nav ul li:first-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/1.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/2.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/3.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/4.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(5) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/5.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(6) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/6.png");
+}
+.sidebar .wrapper .design-selection nav ul li:nth-child(7) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/7.png");
+}
+.sidebar .wrapper .design-selection nav ul li:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/img/8.png");
+}
+.sidebar .wrapper .design-archives {
+  flex: 0 0 40%;
+  background-color: #8A9A5B;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 48px 12px;
+}
+.sidebar .wrapper .design-archives h3 {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.sidebar .wrapper .design-archives nav ul li a {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 200%;
+}
+.sidebar .wrapper .design-archives::after {
+  content: "";
+  position: absolute;
+  background-color: #8A9A5B;
+  width: calc(50vw - 100% - 11px);
+  height: 100%;
+  top: 0;
+  right: calc(100% - 1px);
+}
+.sidebar .wrapper .zen-resources {
+  flex: 0 0 calc(60% + 1px);
+  background-color: #8A9A5B;
+  position: relative;
+  display: flex;
+  gap: 24px;
+  padding: 48px 12px;
+  margin-left: -1px;
+}
+.sidebar .wrapper .zen-resources h3 {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.sidebar .wrapper .zen-resources ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.sidebar .wrapper .zen-resources ul li {
+  flex: 0 0 calc(50% - 12px);
+}
+.sidebar .wrapper .zen-resources ul li a {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 200%;
+}
+.sidebar .wrapper .zen-resources ul li:first-child {
+  order: 1;
+}
+.sidebar .wrapper .zen-resources ul li:nth-child(2) {
+  order: 3;
+}
+.sidebar .wrapper .zen-resources ul li:nth-child(3) {
+  order: 5;
+}
+.sidebar .wrapper .zen-resources ul li:nth-child(4) {
+  order: 2;
+}
+.sidebar .wrapper .zen-resources ul li:last-child {
+  order: 4;
+}
+.sidebar .wrapper .zen-resources::after {
+  content: "";
+  position: absolute;
+  background-color: #8A9A5B;
+  width: calc(50vw - 84% + 2px);
+  height: 100%;
+  top: 0;
+  left: calc(100% - 1px);
+}
+
+/* Combined Media Queries */
+@media screen and (max-width: 1199px) {
+  .intro header h1 {
+    font-size: 96px;
+  }
+  .intro header h2 {
+    font-size: 61px;
+    padding-right: 2%;
+    margin-top: 172px;
+  }
+  .intro .summary {
+    padding: 48px 18px 132px 48px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro header h1 {
+    font-size: 70px;
+  }
+  .intro header h1::after {
+    height: calc(50% - 24px);
+  }
+  .intro header h2 {
+    font-size: 48px;
+    padding-right: 6vw;
+    padding-left: 24px;
+    margin-top: 127px;
+  }
+  .intro .summary {
+    padding: 24px 12px 98px 24px;
+    font-size: 15px;
+    border-radius: 24px;
+  }
+  .intro .preamble p:last-child::after {
+    height: calc(50% - 24px);
+  }
+  .supporting .requirements h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 863px) {
+  .intro header h2 {
+    padding-right: 12px;
+    font-size: 46px;
+    margin-top: 148px;
+  }
+  .intro .summary {
+    padding: 24px 12px 94px 24px;
+  }
+}
+@media screen and (max-width: 838px) {
+  .intro header h2 {
+    margin-top: 171px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-wrapper {
+    padding: 0;
+  }
+  .intro header {
+    padding-top: 32px;
+    align-items: center;
+  }
+  .intro header h1 {
+    padding-top: 0;
+    font-size: 48px;
+    padding-right: 8px;
+  }
+  .intro header h1::before {
+    width: 100%;
+    height: calc(50% - 32px);
+    background-color: #87ceeb;
+    left: 0;
+    top: -64px;
+    bottom: unset;
+    right: unset;
+    border-radius: 0 0 20px 0;
+    height: 101px;
+  }
+  .intro header h1::after {
+    content: "Css zen garden";
+    top: 0;
+    background: transparent;
+    left: -8px;
+  }
+  .intro header h2 {
+    margin-top: 0;
+    padding: 0;
+    font-size: 32px;
+  }
+  .intro header h2 abbr {
+    display: none;
+  }
+  .intro .summary {
+    position: relative;
+    width: 75%;
+    right: 0;
+    margin-left: auto;
+    margin-top: 24px;
+    padding: 12px 12% 12px 48px;
+    font-size: 16px;
+    width: 90%;
+    margin-top: 12px;
+    padding: 12px 48px;
+  }
+  .intro .preamble {
+    background-color: #b0c4de;
+    padding: 36px 24px;
+    border-radius: 50px;
+    margin: 24px 0;
+  }
+  .intro .preamble h3 {
+    font-size: 24px;
+    color: #000;
+  }
+  .intro .preamble p {
+    font-size: 16px;
+  }
+  .intro .preamble p:last-child {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 24px;
+  }
+  .intro .preamble p:last-child::after {
+    display: none;
+  }
+  .supporting {
+    padding-bottom: 0;
+  }
+  .supporting .explanation,
+  .supporting .benefits {
+    padding: 36px 20%;
+    margin: 24px 0;
+    width: 100%;
+  }
+  .supporting .explanation h3,
+  .supporting .benefits h3 {
+    font-size: 24px;
+  }
+  .supporting .explanation p,
+  .supporting .benefits p {
+    font-size: 16px;
+  }
+  .supporting .participation {
+    margin: 24px 0;
+    width: 90%;
+    padding: 24px 48px;
+  }
+  .supporting .participation h3 {
+    font-size: 24px;
+  }
+  .supporting .participation p {
+    font-size: 16px;
+  }
+  .supporting .participation p::after {
+    display: none;
+  }
+  .supporting .requirements {
+    position: relative;
+    margin: 24px 0;
+    padding: 48px;
+    width: 100%;
+  }
+  .supporting .requirements h3 {
+    font-size: 24px;
+  }
+  .supporting .requirements p {
+    font-size: 16px;
+  }
+  .supporting footer {
+    width: 100%;
+    padding: 0 48px;
+    bottom: -1309px;
+  }
+  .sidebar .wrapper .design-selection {
+    margin: 24px 0;
+    padding: 0 48px 170px;
+  }
+  .sidebar .wrapper .design-selection h3 {
+    font-size: 24px;
+  }
+  .sidebar .wrapper .design-selection nav ul li {
+    flex: 0 0 calc(50% - 12px);
+    height: calc(25% - 18px);
+  }
+  .sidebar .wrapper .design-archives h3 {
+    font-size: 28px;
+  }
+  .sidebar .wrapper .design-archives::after {
+    display: none;
+  }
+  .sidebar .wrapper .design-archives nav ul li a {
+    font-size: 16px;
+  }
+  .sidebar .wrapper .zen-resources h3 {
+    font-size: 28px;
+  }
+  .sidebar .wrapper .zen-resources ul li a {
+    font-size: 16px;
+  }
+  .sidebar .wrapper .zen-resources::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .supporting footer {
+    bottom: calc(-253px - (200vw - 144px));
+  }
+}
+@media screen and (max-width: 539px) {
+  .intro header h1 {
+    font-size: 32px;
+  }
+  .intro header h1::before {
+    top: -32px;
+    height: 56px;
+  }
+  .intro header h2 {
+    font-size: 20px;
+  }
+  .intro .preamble {
+    padding: 24px;
+    border-radius: 20px;
+    width: 95%;
+    margin-bottom: 200px;
+  }
+  .intro .preamble p:last-child {
+    left: unset;
+    right: -5%;
+    top: calc(100% + 80px);
+  }
+  .intro .preamble p:last-child::after {
+    top: -32px;
+    height: 56px;
+  }
+  .supporting .explanation,
+  .supporting .benefits {
+    padding: 24px;
+  }
+  .supporting .requirements {
+    padding: 24px;
+  }
+  .supporting footer {
+    padding: 0 24px;
+    bottom: calc(-253px - (200vw - 48px));
+  }
+  .sidebar .wrapper .design-selection {
+    padding: 0 24px 146px;
+  }
+  .sidebar .wrapper .design-selection nav ul li a.design-name {
+    font-size: 14px;
+  }
+  .sidebar .wrapper .design-selection nav ul li a.designer-name {
+    font-size: 14px;
+  }
+  .sidebar .wrapper .design-archives {
+    flex: 0 0 100%;
+    flex-direction: row;
+  }
+  .sidebar .wrapper .zen-resources {
+    flex: 0 0 100%;
+    margin-top: -1px;
+    flex-direction: row;
+  }
+  .sidebar .wrapper .zen-resources ul li {
+    flex: 0 0 100%;
+  }
+}
+@media screen and (max-width: 446px) {
+  .intro .preamble {
+    margin-bottom: 240px;
+  }
+  .intro .preamble p:last-child {
+    top: calc(100% + 100px);
+  }
+}
+@media screen and (max-width: 378px) {
+  .intro .preamble {
+    margin-bottom: 250px;
+  }
+  .intro .preamble p:last-child {
+    top: calc(100% + 110px);
+  }
+}
